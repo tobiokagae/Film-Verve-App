@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midnightblue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome,"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Andi Alisha Faiqihah."
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_trending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Now Trending"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="40dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_trending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:listitem="@layout/layout_trending"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_popular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popular Movies"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_popular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/layout_movie"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/tv_nowplaying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Now Playing"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_nowplaying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/layout_movie"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/tv_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upcoming Movies"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/layout_movie"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

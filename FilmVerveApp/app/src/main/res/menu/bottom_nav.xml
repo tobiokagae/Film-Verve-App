@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Gome"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/watchlist"
+        android:title="Watchlist"
+        android:icon="@drawable/baseline_format_list_bulleted_24"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/round_account_circle_24"/>
+</menu>
