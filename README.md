@@ -1,4 +1,7 @@
-# TugasFinal-PemrogramanMobile
+# FilmVerve
+
+_Sebuah aplikasi mobile yang dirancang untuk menyediakan informasi terkini tentang movie kepada user dengan movie yang terus di update._
+
 
 **FITUR-FITUR**
 1. Menampilkan Informasi Movie
