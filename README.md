@@ -4,25 +4,25 @@ _Sebuah aplikasi mobile yang dirancang untuk menyediakan informasi terkini tenta
 
 
 **FITUR-FITUR**
-1. Menampilkan Informasi Movie
-2. Menampilkan Movie yang akan tayang, yang sedang tayang, yang populer, dan yang sedang trending.
-3. Pencarian Movie.
-4. Menambahkan Movie ke dalam Watchlist
-5. Login dan Register akun.
-6. Hapus akun.
+1. Detail Movie.
+2. Trending Movie, Popular Movie, Upcoming Movie, Now Playing Movie.
+3. Search Movie.
+4. Movie Watchlist.
+5. Login and Register.
+6. Delete Account.
 
 **SPESIFIKASI TEKNIS**
-1. Activity : 4 Activity (Main Activity, Login Activity, Register Activity, Detail Activity)
+1. Activity : 4 Activity.
 2. Intent: Berpindah Activity, Mendapatkan data tambahan dari Activity sebelumnya.
 3. RecyclerView: Untuk menampilkan data seperti daftar film populer film yang sedang trend, daftar watchlist, dll.
-4. Fragment & Navigation: Digunakan dalam bottom navigation untuk menavigasi antar fragment (Home Fragment, Search Fragment, Watchlist Fragment, Profile Fragment).
+4. Fragment & Navigation: Digunakan dalam bottom navigation untuk menavigasi antar fragment.
 5. Background Thread (Executor dan Handler) :
      - Penggunaan ExecutorService
      - Penggunaan Handler
-6. Networking: Menggunakan API untuk ditarik data data semua mvoie.
+6. Networking: API TMDB
 7. Local Data Persistent:
-     - SQLite : menyimpan data data pengguna yang telah register
-     - Shared Preferences : menyimpan informasi login, menyimpan data akun user yang login untuk ditampilkan.
+     - SQLite
+     - Shared Preferences
 
 
 
